@@ -41,4 +41,4 @@ elif weighted_sum >= 50:
 else:
     gpa = 0.0
 
-print(f"Your GPA is: {gpa:.1f}")    
+print(f"Your GPA is: {gpa:.1f}")
