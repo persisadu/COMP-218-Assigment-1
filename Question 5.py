@@ -1,6 +1,6 @@
-#Program to calculate final GPA from weighted percentage and convert to GPA
+# Program to calculate final GPA from weighted percentage and convert to GPA
 
-#Get number of assesments
+# Get number of assesments
 num = int(input("Enter number of graded items (e.g., assignments, exams):"))
 
 total_weight = 0

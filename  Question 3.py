@@ -1,13 +1,10 @@
-#Program to calculate daily employee pay
+# Program to calculate daily employee pay
 
-
-#Input: workday/weekend and hours worked
-
+# Input: workday/weekend and hours worked
 day_type = input("Enter day type (weekday/weekend: ").strip().lower()
 hours_worked = float(input("Enter hours worked:"))
 
-#Pay calculation
-
+# Pay calculation
 if day_type == "weekday":
     regular_hours = min(hours_worked, 8)
     overtime_hours = max(0, hours_worked - 8)
