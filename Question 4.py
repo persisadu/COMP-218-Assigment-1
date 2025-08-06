@@ -1,4 +1,8 @@
+#Program to calculate Canadian federal income tax (2025 rates))
+
 income = float(input("Enter your annual taxable income:"))
+
+#2025 federal tax brackets and rates
 
 brackets = [55867, 111733, 173205, 246752]
 rates = [0.15, 0.205, 0.29, 0.33]

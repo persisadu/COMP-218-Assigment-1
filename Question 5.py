@@ -1,19 +1,25 @@
+#Program to calculate final GPA from weighted percentage and convert to GPA
+
+#Get number of assesments
 num = int(input("Enter number of graded items (e.g., assignments, exams):"))
 
 total_weight = 0
 weighted_suum = 0
 
+# Input each score and wight
 for i in range(num):
     score = float(input(f"Enter percentage grade for item #{i+1}: "))
     weight = float(input(f"Enter weight of item #{i+1} (as a percentage):"))
     total_weight += weight
     weighted_sum += score * (weight / 100)
 
+# Check if total weight is valid
 if total_weight != 100:
     print("Warning: Total weights do not add up to 100%.")
 
 print(f"Final weighted percentage: {weighted_sum:.2f}%")
 
+# GPA conversion (Onatrio)
 if weighted_sum >= 90:
     gpa = 4.0
 elif weighted_sum >= 85:

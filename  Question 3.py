@@ -1,5 +1,12 @@
+#Program to calculate daily employee pay
+
+
+#Input: workday/weekend and hours worked
+
 day_type = input("Enter day type (weekday/weekend: ").strip().lower()
 hours_worked = float(input("Enter hours worked:"))
+
+#Pay calculation
 
 if day_type == "weekday":
     regular_hours = min(hours_worked, 8)
